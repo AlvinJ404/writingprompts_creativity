@@ -9,13 +9,13 @@ import time
 openai.api_key = os.environ.get('OPENAI_DHH_KEY')
 
 # File name
-input_file = "dataset/writing_prompts_test_subset.csv"
+input_file = "dataset/gpt-4/writing_prompts_train_subset.csv"
 
 def generate_completion(prompt):
-    """Generate a story completion using GPT-3.5-turbo."""
+    """Generate a story completion using a select GPT model."""
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant for completing creative writing prompts."},
                 {"role": "user", "content": prompt}
