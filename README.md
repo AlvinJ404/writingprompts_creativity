@@ -52,7 +52,7 @@ Ensure you have the following installed:
 
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/prompt_creativity.git
+git clone https://github.com/AlvinJ404/writingprompts_creativity.git
 cd writingprompts_creativity
 ```
 
